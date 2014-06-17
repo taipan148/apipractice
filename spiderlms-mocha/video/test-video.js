@@ -72,7 +72,7 @@ describe('Test Video', function(){
 
 	it('Test3: Retrieve a specific Video - GET request', function(done) {
 	  TheAPI
-	  	.patch('/videos/2')
+	  	.get('/videos/2')
 	  	.send()
 	  	.expect(201)
         .end(function(err, res) {
